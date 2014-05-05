@@ -1,20 +1,28 @@
 // Number of buttons to handle
-const int buttonsCount = 4;
+const int buttonsCount = 8;
 
 // Arduino PINs to use
 const int pins[buttonsCount] = {
 	2,
 	3,
 	4,
-	5
+	5,
+	6,
+	7,
+	8,
+	9
 };
 
 // Keys to send (order has to match the pins array)
 const byte keys[buttonsCount] = {
-	KEY_UP_ARROW,
+	KEY_RIGHT_ARROW,
 	KEY_DOWN_ARROW,
 	KEY_LEFT_ARROW,
-	KEY_RIGHT_ARROW
+	KEY_UP_ARROW,
+	'q',
+	'w',
+	KEY_RETURN,
+	KEY_ESC
 };
 
 // Debounce delay
